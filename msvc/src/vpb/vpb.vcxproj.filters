@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\vpb\BuildLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\BuildOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\BuildOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\BuildOptionsIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\Commandline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\DatabaseBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\DatabaseBuilderIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\DataSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\Date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\Destination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\ExtrudeVisitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\FileCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\FileDetails.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\FileUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\FilePathManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\GeospatialDataset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\HeightFieldMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\MachinePool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\ObjectPlacer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\PropertyFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\ShapeFilePlacer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\SourceData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\SpatialProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\TextureUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\Task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\TaskManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\vpb\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\vpb\BlockOperation" />
+    <None Include="..\..\..\include\vpb\BuildLog" />
+    <None Include="..\..\..\include\vpb\BuildOperation" />
+    <None Include="..\..\..\include\vpb\BuildOptions" />
+    <None Include="..\..\..\include\vpb\Commandline" />
+    <None Include="..\..\..\include\vpb\DatabaseBuilder" />
+    <None Include="..\..\..\include\vpb\DataSet" />
+    <None Include="..\..\..\include\vpb\Date" />
+    <None Include="..\..\..\include\vpb\Destination" />
+    <None Include="..\..\..\include\vpb\Export" />
+    <None Include="..\..\..\include\vpb\ExtrudeVisitor" />
+    <None Include="..\..\..\include\vpb\FileCache" />
+    <None Include="..\..\..\include\vpb\FileDetails" />
+    <None Include="..\..\..\include\vpb\FileUtils" />
+    <None Include="..\..\..\include\vpb\FilePathManager" />
+    <None Include="..\..\..\include\vpb\GeospatialDataset" />
+    <None Include="..\..\..\include\vpb\HeightFieldMapper" />
+    <None Include="..\..\..\include\vpb\MachinePool" />
+    <None Include="..\..\..\include\vpb\ObjectPlacer" />
+    <None Include="..\..\..\include\vpb\PropertyFile" />
+    <None Include="..\..\..\include\vpb\ShapeFilePlacer" />
+    <None Include="..\..\..\include\vpb\Source" />
+    <None Include="..\..\..\include\vpb\SourceData" />
+    <None Include="..\..\..\include\vpb\SpatialProperties" />
+    <None Include="..\..\..\include\vpb\System" />
+    <None Include="..\..\..\include\vpb\TextureUtils" />
+    <None Include="..\..\..\include\vpb\Task" />
+    <None Include="..\..\..\include\vpb\TaskManager" />
+    <None Include="..\..\..\include\vpb\ThreadPool" />
+    <None Include="..\..\..\include\vpb\Version" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E589A7D2-A42D-367A-AFBA-2A60807AEB60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{15137D07-F084-36A8-B3DF-AFBB25E700F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

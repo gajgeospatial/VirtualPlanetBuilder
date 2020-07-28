@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{848E426E-5C0A-3E62-8B8E-4B888C5FA617}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Applications vpbsizes</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vpbsizesd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">vpbsizesd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">vpbsizesd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vpbsizes</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">vpbsizes</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">vpbsizes</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include;..\..\..\..\$(OSG_DIR)\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vpbd.lib;gdal_i.lib;osgd.lib;osgTerraind.lib;osgViewerd.lib;Ws2_32.lib;osgd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;OpenThreadsd.lib;opengl32.lib;OpenThreadsd.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)vpbsizesd.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include;..\..\..\..\$(OSG_DIR)\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vpbd.lib;gdal_i.lib;osgd.lib;osgTerraind.lib;osgViewerd.lib;Ws2_32.lib;osgd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;OpenThreadsd.lib;opengl32.lib;OpenThreadsd.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)vpbsizesd.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include;..\..\..\..\$(OSG_DIR)\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vpbd.lib;gdal_i.lib;osgd.lib;osgTerraind.lib;osgViewerd.lib;Ws2_32.lib;osgd.lib;osgUtild.lib;osgSimd.lib;osgTerraind.lib;osgDBd.lib;osgFXd.lib;osgViewerd.lib;osgTextd.lib;osgGAd.lib;OpenThreadsd.lib;opengl32.lib;OpenThreadsd.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)vpbsizesd.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include;..\..\..\..\$(OSG_DIR)\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vpb.lib;gdal_i.lib;osg.lib;osgTerrain.lib;osgViewer.lib;Ws2_32.lib;osgUtil.lib;osgSim.lib;osgDB.lib;osgFX.lib;osgText.lib;osgGA.lib;OpenThreads.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)vpbsizes.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include;..\..\..\..\$(OSG_DIR)\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vpb.lib;gdal_i.lib;osg.lib;osgTerrain.lib;osgViewer.lib;Ws2_32.lib;osgUtil.lib;osgSim.lib;osgDB.lib;osgFX.lib;osgText.lib;osgGA.lib;OpenThreads.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)vpbsizes.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include;..\..\..\..\$(OSG_DIR)\msvc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4706;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\$(GDAL_DIR)\frmts;..\..\..\..\$(GDAL_DIR)\alg;..\..\..\..\$(GDAL_DIR)\gcore;..\..\..\..\$(GDAL_DIR)\port;..\..\..\..\$(GDAL_DIR)\ogr;..\..\..\..\$(GDAL_DIR)\ogr\ogrsf_frmts;..\..\..\..\$(OSG_DIR)\include\osgDB;..\..\..\..\$(OSG_DIR)\include\osgFX;..\..\..\..\$(OSG_DIR)\include\osgUtil;..\..\..\..\$(OSG_DIR)\include\osgSim;..\..\..\..\$(OSG_DIR)\include\osgTerrain;..\..\..\..\$(OSG_DIR)\include\osgViewer;..\..\..\..\$(OSG_DIR)\include\osgGA;..\..\..\..\$(OSG_DIR)\include\osgText;..\..\..\..\$(OSG_DIR)\include\osg;..\..\..\..\$(OSG_DIR)\include\OpenThreads;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>vpb.lib;gdal_i.lib;osg.lib;osgTerrain.lib;osgViewer.lib;Ws2_32.lib;osgUtil.lib;osgSim.lib;osgDB.lib;osgFX.lib;osgText.lib;osgGA.lib;OpenThreads.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(GDAL_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);..\..\..\..\$(OSG_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)vpbsizes.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\applications\vpbsizes\vpbsizes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\vpb\vpb.vcxproj">
+      <Project>{29C00BF8-5178-373F-BCD7-41550A719D7F}</Project>
+      <Name>vpb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

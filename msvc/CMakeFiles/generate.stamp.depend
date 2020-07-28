@@ -1,0 +1,46 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/CMakeLists.txt
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/CMakeModules/VpbMacroUtils.cmake
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/CMakeModules/cmake_uninstall.cmake.in
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/msvc/CMakeFiles/3.14.3/CMakeCCompiler.cmake
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/msvc/CMakeFiles/3.14.3/CMakeCXXCompiler.cmake
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/msvc/CMakeFiles/3.14.3/CMakeRCCompiler.cmake
+C:/Development/op3d_active/VirtualPlanetBuilder-1-1-0/msvc/CMakeFiles/3.14.3/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindGDAL.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindOpenSceneGraph.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindOpenThreads.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Findosg.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgDB.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgFX.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgGA.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgSim.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgTerrain.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgText.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgUtil.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindosgViewer.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Findosg_functions.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/SelectLibraryConfigurations.cmake

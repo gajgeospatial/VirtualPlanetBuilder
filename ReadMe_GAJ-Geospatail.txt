@@ -1,0 +1,1 @@
+This project should be installed as VPB_DIR with ProjectTool.
