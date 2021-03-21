@@ -17,11 +17,45 @@
 
 using namespace vpb;
 
+bool GeospatialDataset::Is_GeoPackage(const std::string &filename, std::string &Gfilename, std::string &TableName)
+{
+    if (filename.substr(0, 6) == "GPKG::")
+    {
+        std::string tname = filename.substr(6);
+        size_t ipos = tname.find("::");
+        if (ipos != std::string::npos)
+        {
+            if (tname.length() > ipos + 3)
+            {
+                TableName = tname.substr(0, ipos);
+                Gfilename = tname.substr(ipos + 2);
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 GeospatialDataset::GeospatialDataset(const std::string& filename, AccessMode accessMode)
 {
     updateTimeStamp();
-    _dataset = (GDALDataset*)GDALOpen(filename.c_str(), accessMode==READ_ONLY ? GA_ReadOnly : GA_Update);
-    
+    std::string Gfilename;
+    std::string TableName;
+
+    if (Is_GeoPackage(filename, Gfilename, TableName))
+    {
+        std::string Tablestr = "TABLE=" + TableName;
+        char *Ioption = new char[Tablestr.length() + 1];
+        strncpy_s(Ioption, Tablestr.length() + 1, Tablestr.c_str(), Tablestr.length());
+        char* papszOptions[2] = { NULL,NULL };
+        papszOptions[0] = Ioption;
+        _dataset = (GDALDataset *)GDALOpenEx(Gfilename.c_str(), (GDAL_OF_RASTER | (accessMode == READ_ONLY ? GA_ReadOnly : GA_Update)), NULL, papszOptions, NULL);
+
+    }
+    else
+    {
+        _dataset = (GDALDataset*)GDALOpen(filename.c_str(), accessMode == READ_ONLY ? GA_ReadOnly : GA_Update);
+    }
     //osg::notify(osg::NOTICE)<<"GDALOpen("<<filename<<") = "<<_dataset<<std::endl;
 }
 

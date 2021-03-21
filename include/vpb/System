@@ -165,6 +165,7 @@ class VPB_EXPORT System : public osg::Referenced
         const UnsupportedExtensions& getUnsupportedExtensions() const { return _unsupportedExtensions; }
         void addUnsupportedExtension(const std::string& ext) { _unsupportedExtensions.insert(ext); }
         
+
         /** brute force way to check if file is supported by GDAL/VirtualPlanetBuilder by opening the file.*/
         bool openFileToCheckThatItSupported(const std::string& filename, int acceptedTypeMask);
 
@@ -172,7 +173,8 @@ class VPB_EXPORT System : public osg::Referenced
     
         System();
         virtual ~System();
-        
+        bool Is_GeoPackage(const std::string &filename, std::string &Gfilename, std::string &TableName);
+
         osgDB::FilePathList         _sourcePaths;
         std::string                 _destinationDirectory;
         std::string                 _intermediateDirectory;

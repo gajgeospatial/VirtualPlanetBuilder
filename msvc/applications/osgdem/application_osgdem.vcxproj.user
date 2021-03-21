@@ -1,4 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Debug|x64'">
+    <LocalDebuggerCommandArguments>--RGB-24 --image-ext png  -d GPKG::Elevation::D:\TestOutput\LongBeachMesh_4k\LongBeachMesh_4k.gpkg -t GPKG::Imagery::D:\TestOutput\LongBeachMesh_4k\LongBeachMesh_4K.gpkg   -o D:\TestOutput\LongBeachMesh_4k\ive\LongBeachMesh_4k.ive</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">
+    <LocalDebuggerCommandArguments>--RGB-24 --image-ext png -d D:\TestOutput\multiple\Elevation.img -t D:\TestOutput\multiple\Imagery.1001.png -t D:\TestOutput\multiple\Imagery.1002.png -t D:\TestOutput\multiple\Imagery.1003.png -t D:\TestOutput\multiple\Imagery.1011.png -t D:\TestOutput\multiple\Imagery.1012.png -t D:\TestOutput\multiple\Imagery.1013.png -t D:\TestOutput\multiple\Imagery.1021.png -t D:\TestOutput\multiple\Imagery.1022.png -t D:\TestOutput\multiple\Imagery.1023.png -o D:\TestOutput\multiple\ive\multiple.ive</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <LocalDebuggerCommandArguments>--RGB-24 --image-ext png --image-ext png -d D:\TestOutput\test_1k\Elevation.img -t D:\TestOutput\Test_1k\Imagery.png   -o D:\TestOutput\Test_1k\ive\Test_1k.ive</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>--RGB-24 --image-ext png  -d GPKG::Elevation::D:\TestOutput\LongBeachMesh_4k\LongBeachMesh_4k.gpkg -t GPKG::Imagery::D:\TestOutput\LongBeachMesh_4k\LongBeachMesh_4k.gpkg   -o D:\TestOutput\LongBeachMesh_4k\ive\LongBeachMesh_4k.ive</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <LocalDebuggerCommandArguments>--RGB-24 --image-ext png -d D:\TestOutput\multiple\Elevation.img -t D:\TestOutput\multiple\Imagery.1001.png -t D:\TestOutput\multiple\Imagery.1002.png -t D:\TestOutput\multiple\Imagery.1003.png -t D:\TestOutput\multiple\Imagery.1011.png -t D:\TestOutput\multiple\Imagery.1012.png -t D:\TestOutput\multiple\Imagery.1013.png -t D:\TestOutput\multiple\Imagery.1021.png -t D:\TestOutput\multiple\Imagery.1022.png -t D:\TestOutput\multiple\Imagery.1023.png -o D:\TestOutput\multiple\ive\multiple.ive</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

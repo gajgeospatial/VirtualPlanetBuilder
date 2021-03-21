@@ -93,7 +93,7 @@ void Commandline::processFile(vpb::Source::Type type, const std::string& filenam
     }
 
 
-    if (osgDB::fileType(filename) == osgDB::REGULAR_FILE)
+    if ((osgDB::fileType(filename) == osgDB::REGULAR_FILE) || (filename.substr(0,6) == "GPKG::"))
     {
         if (!(System::instance()->isFileTypeSupported(filename, type)))
         {

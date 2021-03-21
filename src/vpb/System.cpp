@@ -457,12 +457,50 @@ unsigned long System::getFileSize(const std::string& filename)
     }
 }
 
+bool System::Is_GeoPackage(const std::string &filename, std::string &Gfilename, std::string &TableName)
+{
+    if (filename.substr(0, 6) == "GPKG::")
+    {
+        std::string tname = filename.substr(6);
+        size_t ipos = tname.find("::");
+        if (ipos != std::string::npos)
+        {
+            if (tname.length() > ipos + 3)
+            {
+                TableName = tname.substr(0, ipos);
+                Gfilename = tname.substr(ipos + 2);
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 bool System::openFileToCheckThatItSupported(const std::string& filename, int acceptedTypeMask)
 {
     osg::notify(osg::INFO)<<"System::openFileToCheckThatItSupported("<<filename<<")"<<std::endl;
-    std::string ext = osgDB::getFileExtension(filename);
+    std::string Gfilename;
+    std::string TableName;
+    std::string ext;
+    GDALDataset * dataset = nullptr;
 
-    GDALDataset* dataset = (GDALDataset*)GDALOpen(filename.c_str(), GA_ReadOnly);
+    if (Is_GeoPackage(filename, Gfilename, TableName))
+    {
+        ext = osgDB::getFileExtension(Gfilename);
+        std::string Tablestr = "TABLE=" + TableName;
+        char *Ioption = new char[Tablestr.length() + 1];
+        strncpy_s(Ioption, Tablestr.length() + 1, Tablestr.c_str(), Tablestr.length());
+        char* papszOptions[2] = { NULL,NULL};
+        papszOptions[0] = Ioption;
+        dataset = (GDALDataset *)GDALOpenEx(Gfilename.c_str(), (GDAL_OF_RASTER | GA_ReadOnly), NULL, papszOptions, NULL);
+
+    }
+    else
+    {
+        ext = osgDB::getFileExtension(filename);
+
+        dataset = (GDALDataset*)GDALOpen(filename.c_str(), GA_ReadOnly);
+    }
     if (dataset)
     {
         osg::notify(osg::INFO)<<"   GDALOpen("<<filename<<") succeeded "<<std::endl;

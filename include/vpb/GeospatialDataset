@@ -75,6 +75,8 @@ class VPB_EXPORT GeospatialDataset : public osg::Referenced
 
         virtual ~GeospatialDataset();
         
+        bool Is_GeoPackage(const std::string &filename, std::string &Gfilename, std::string &TableName);
+
         mutable OpenThreads::Mutex  _mutex;
         GDALDataset*                _dataset;
         double                      _timeStamp;
